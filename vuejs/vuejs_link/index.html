@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <h1>
+            {{message}}
+        </h1>
+        <span>{{count}}</span> <br>
+        <button @click="clickMe">Click Me</button>
+    </div>
+    <script>
+      // import {ref} from 
+      const app = Vue.createApp({
+        data() {
+          return {
+            message: "Hello world",
+            count: 0
+          };
+        },
+        methods: {
+            clickMe(){
+                this.count+=1
+            }
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

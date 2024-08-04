@@ -1,0 +1,4 @@
+react quick systax
+    - rafce : arrow function and export default below
+    - rafc : arrow function and export 
+    - rfc: regular function and export default below
